@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav{
+    border: none;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
