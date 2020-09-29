@@ -1,71 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Moface</title>
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/tailwind.min.css" />
-  </head>
-  <body class="container-fluid">
-    <nav
-      class="fixed top-0 left-0 botton-0 h-screen w-32 flex flex-col justify-between items-center bg-gradient-to-r from-orange-600 to-orange-400 text-gray-200 py-8 px-4"
-    >
-      <button class="fab fa-meetup fa-5x"></button>
 
-      <ul class="flex flex-col justify-between items-center -mt-24">
-        <button class="p-4">
-          <img
-            src="img/001-hamburguesa.svg"
-            alt=""
-            class="h-16 transition duration-300 ease-in-out transform hover:scale-125"
-            style="filter: drop-shadow(8px 10px 12px #77777766)"
-          />
-        </button>
-        <button class="p-4">
-          <img
-            src="img/002-pizza.svg"
-            alt=""
-            class="h-16 transition duration-300 ease-in-out transform hover:scale-125"
-            style="filter: drop-shadow(8px 10px 12px #77777766)"
-          />
-        </button>
-        <button class="p-4">
-          <img
-            src="img/004-lata-de-refresco.svg"
-            alt=""
-            class="h-16 transition duration-300 ease-in-out transform hover:scale-125"
-            style="filter: drop-shadow(8px 10px 12px #77777766)"
-          />
-        </button>
-      </ul>
-      <button class="fas fa-sign-out-alt fa-4x"></button>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <title>Moface</title>
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/splide-sea-green.min.css" />
+  <link rel="stylesheet" href="css/tailwind.min.css" />
+</head>
 
-    <div
-      class="w-full min-h-screen bg-gray-200 text-gray-900 text-xl shadow-lg pt-12 pl-40 pr-12"
-    >
-      <section>
-        <h1 class="text-6xl font-bold">Mocafe</h1>
-        <p class="-mt-4">Lorem ipsum dolor sit.</p>
-      </section>
+<body class="container-fluid">
+  <nav
+    class="fixed top-0 left-0 botton-0 h-screen w-32 flex flex-col justify-between items-center bg-gradient-to-r from-orange-600 to-orange-400 text-gray-200 py-8 px-4">
+    <button class="fab fa-meetup fa-5x"></button>
 
-      <section class="my-12">
-        <h2 class="text-5xl font-bold text-gray-800">Hamburguesas</h2>
-        <ul>
-            <div class="w-full max-w-md grid grid-cols-1 grid-rows-5 rounded overflow-hidden shadow-lg">
-                <div class="row-span-4 bg-cover bg-center" style="background-image: url(img/h1.jpeg);">
+    <ul class="flex flex-col justify-between items-center -mt-24">
+      <button class="p-4">
+        <img src="img/001-hamburguesa.svg" alt=""
+          class="h-16 transition duration-300 ease-in-out transform hover:scale-125"
+          style="filter: drop-shadow(8px 10px 12px #77777766)" />
+      </button>
+      <button class="p-4">
+        <img src="img/002-pizza.svg" alt="" class="h-16 transition duration-300 ease-in-out transform hover:scale-125"
+          style="filter: drop-shadow(8px 10px 12px #77777766)" />
+      </button>
+      <button class="p-4">
+        <img src="img/004-lata-de-refresco.svg" alt=""
+          class="h-16 transition duration-300 ease-in-out transform hover:scale-125"
+          style="filter: drop-shadow(8px 10px 12px #77777766)" />
+      </button>
+    </ul>
+    <button class="fas fa-sign-out-alt fa-4x opacity-0"></button>
+  </nav>
 
+  <div class="w-full min-h-screen bg-gray-200 text-gray-900 text-xl shadow-lg pt-12 pl-40 pr-12">
+    <section>
+      <h1 class="text-6xl font-bold">Mocafe</h1>
+      <p class="-mt-4">Lorem ipsum dolor sit.</p>
+    </section>
+
+    <section class="my-12">
+      <h2 class="text-5xl text-gray-800 font-bold uppercase">Hamburguesas</h2>
+
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <div class="splide__slide w-full max-w-md grid grid-cols-1 grid-rows-5 rounded overflow-hidden shadow-lg">
+              <div class="row-span-4 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
+              <form class="row-span-1 bg-gray-100 px-6 py-4">
+                <h2 class="font-bold text-2xl text-center mb-2">
+                  The Coldest Sunset
+                </h2>
+                <div class="flex justify-between items-center">
+                  <span>Precio: <strong>4$</strong></span>
+                  <button
+                    class="bg-orange-200 text-orange-900 hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    Añadir al pedido
+                  </button>
                 </div>
-                <form class="row-span-1 bg-gray-100 px-6 py-4">
-                  <h2 class="font-bold text-2xl text-center mb-2">The Coldest Sunset</h2>
-                  <div class="flex justify-between items-center">
-                    <span>Precio: <strong>4$</strong></span>
-                    <button class="bg-orange-200 text-orange-900 hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">Añadir al pedido</button>
-                  </div>
-                </form>
-              </div>
-        </ul>
-      </section>
-    </div>
-  </body>
+              </form>
+            </div>
+
+            <div class="splide__slide w-full max-w-md grid grid-cols-1 grid-rows-5 rounded overflow-hidden shadow-lg">
+              <div class="row-span-4 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
+              <form class="row-span-1 bg-gray-100 px-6 py-4">
+                <h2 class="font-bold text-2xl text-center mb-2">
+                  The Coldest Sunset
+                </h2>
+                <div class="flex justify-between items-center">
+                  <span>Precio: <strong>4$</strong></span>
+                  <button
+                    class="bg-orange-200 text-orange-900 hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    Añadir al pedido
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="splide__slide w-full max-w-md grid grid-cols-1 grid-rows-5 rounded overflow-hidden shadow-lg">
+              <div class="row-span-4 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
+              <form class="row-span-1 bg-gray-100 px-6 py-4">
+                <h2 class="font-bold text-2xl text-center mb-2">
+                  The Coldest Sunset
+                </h2>
+                <div class="flex justify-between items-center">
+                  <span>Precio: <strong>4$</strong></span>
+                  <button
+                    class="bg-orange-200 text-orange-900 hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    Añadir al pedido
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="splide__slide w-full max-w-md grid grid-cols-1 grid-rows-5 rounded overflow-hidden shadow-lg">
+              <div class="row-span-4 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
+              <form class="row-span-1 bg-gray-100 px-6 py-4">
+                <h2 class="font-bold text-2xl text-center mb-2">
+                  The Coldest Sunset
+                </h2>
+                <div class="flex justify-between items-center">
+                  <span>Precio: <strong>4$</strong></span>
+                  <button
+                    class="bg-orange-200 text-orange-900 hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    Añadir al pedido
+                  </button>
+                </div>
+              </form>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/splide.min.js"></script>
+  <script>
+    new Splide('.splide', {
+      perPage: 1,
+      gap: '2rem',
+      arrows:false,
+      autoplay:true,
+      resetProgress: true,
+      640: {
+			perPage: 2,
+		}
+    }).mount();
+  </script>
+</body>
+
 </html>
