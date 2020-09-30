@@ -1,4 +1,4 @@
-new Splide('.splide-hamburguesa', {
+new Splide('#splideHamburguesa', {
       perPage: 1,
       gap: '2rem',
       arrows:false,
