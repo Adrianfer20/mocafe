@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Moface</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="css/splide-sea-green.min.css" />
   <link rel="stylesheet" href="css/tailwind.min.css" />
@@ -11,98 +13,130 @@
 
 <body class="container-fluid">
   <nav
-    class="fixed top-0 left-0 botton-0 h-screen w-32 flex flex-col justify-between items-center bg-gradient-to-r from-orange-600 to-orange-400 text-gray-200 py-8 px-4">
-    <button class="fab fa-meetup fa-5x"></button>
+    class="fixed top-0 left-0 botton-0 h-screen w-16 flex flex-col justify-between items-center bg-gradient-to-r from-orange-600 to-orange-400 text-gray-200 py-8">
+    <button class="fab fa-meetup fa-3x"></button>
 
-    <ul class="flex flex-col justify-between items-center -mt-24">
-      <button class="p-4">
+    <ul class="flex flex-col justify-between items-center -mt-16">
+      <button class="w-full py-2 px-4 mb-2">
         <img src="img/001-hamburguesa.svg" alt=""
-          class="h-16 transition duration-300 ease-in-out transform hover:scale-125"
+          class="h-10 transition duration-300 ease-in-out transform focus:scale-125 focus:outline-none hover:scale-125"
           style="filter: drop-shadow(8px 10px 12px #77777766)" />
       </button>
-      <button class="p-4">
-        <img src="img/002-pizza.svg" alt="" class="h-16 transition duration-300 ease-in-out transform hover:scale-125"
-          style="filter: drop-shadow(8px 10px 12px #77777766)" />
+      <button class="w-full py-2 px-4 mb-2">
+        <img src="img/002-pizza.svg" alt="" class="h-10 transition duration-300 ease-in-out transform focus:scale-125 focus:outline-none hover:scale-125"
+          style="filter: drop-shadow(8px 10px 12px #77777766);" />
       </button>
-      <button class="p-4">
+      <button class="w-full py-2 px-4 mb-2">
         <img src="img/004-lata-de-refresco.svg" alt=""
-          class="h-16 transition duration-300 ease-in-out transform hover:scale-125"
+          class="h-10 transition duration-300 ease-in-out transform focus:scale-125 focus:outline-none hover:scale-125"
           style="filter: drop-shadow(8px 10px 12px #77777766)" />
       </button>
     </ul>
-    <button class="fas fa-sign-out-alt fa-4x opacity-0"></button>
+    <button class="fas fa-sign-out-alt fa-2x opacity-0"></button>
   </nav>
 
-  <div class="w-full min-h-screen bg-gray-200 text-gray-900 text-xl shadow-lg pt-12 pl-40 pr-12">
+  <div class="w-full min-h-screen bg-gray-200 text-gray-900 shadow-lg pt-8 pl-20">
     <section>
-      <h1 class="text-6xl font-bold">Mocafe</h1>
-      <p class="-mt-4">Lorem ipsum dolor sit.</p>
+      <h1 class="text-4xl font-bold">Mocafe</h1>
+      <p class="text-base text-gray-700 -mt-4">Lorem ipsum dolor sit.</p>
     </section>
 
-    <section class="my-12">
-      <h2 class="text-5xl text-gray-800 font-bold uppercase">Hamburguesas</h2>
+    <section class="my-8 sm:bg-blue-400 ">
+      <h2 class="text-2xl text-gray-800 font-bold uppercase">Hamburguesas</h2>
 
-      <div class="splide">
+      <div class="splide-hamburguesa">
         <div class="splide__track">
           <ul class="splide__list">
-            <div class="splide__slide w-full max-w-md grid grid-cols-1 grid-rows-5 rounded overflow-hidden shadow-lg">
-              <div class="row-span-4 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
+            <div class="splide__slide w-full max-w-md rounded overflow-hidden shadow-lg">
+              <div class="h-64 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
               <form class="row-span-1 bg-gray-100 px-6 py-4">
-                <h2 class="font-bold text-2xl text-center mb-2">
-                  The Coldest Sunset
+                <h2 class="font-bold text-xl text-center mb-2">
+                  Hamburguesa Doble
                 </h2>
                 <div class="flex justify-between items-center">
-                  <span>Precio: <strong>4$</strong></span>
+                  <span class="text-base "><strong>4$</strong></span>
                   <button
-                    class="bg-orange-200 text-orange-900 hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    class="bg-orange-200 text-orange-900 text-base hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
                     Añadir al pedido
                   </button>
                 </div>
               </form>
             </div>
 
-            <div class="splide__slide w-full max-w-md grid grid-cols-1 grid-rows-5 rounded overflow-hidden shadow-lg">
-              <div class="row-span-4 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
+            <div class="splide__slide w-full max-w-md rounded overflow-hidden shadow-lg">
+              <div class="h-64 bg-cover bg-center" style="background-image: url(img/h2.jpeg)"></div>
               <form class="row-span-1 bg-gray-100 px-6 py-4">
-                <h2 class="font-bold text-2xl text-center mb-2">
-                  The Coldest Sunset
+                <h2 class="font-bold text-xl text-center capitalize mb-2">
+                  Hamburguesa Vegana
                 </h2>
                 <div class="flex justify-between items-center">
-                  <span>Precio: <strong>4$</strong></span>
+                  <span class="text-base "><strong>4$</strong></span>
                   <button
-                    class="bg-orange-200 text-orange-900 hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    class="bg-orange-200 text-orange-900 text-base hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
                     Añadir al pedido
                   </button>
                 </div>
               </form>
             </div>
 
-            <div class="splide__slide w-full max-w-md grid grid-cols-1 grid-rows-5 rounded overflow-hidden shadow-lg">
-              <div class="row-span-4 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
+            <div class="splide__slide w-full max-w-md rounded overflow-hidden shadow-lg">
+              <div class="h-64 bg-cover bg-center" style="background-image: url(img/h3.jpeg)"></div>
               <form class="row-span-1 bg-gray-100 px-6 py-4">
-                <h2 class="font-bold text-2xl text-center mb-2">
-                  The Coldest Sunset
+                <h2 class="font-bold text-xl text-center capitalize mb-2">
+                  Hamburguesa de Queso
                 </h2>
                 <div class="flex justify-between items-center">
-                  <span>Precio: <strong>4$</strong></span>
+                  <span class="text-base "><strong>4$</strong></span>
                   <button
-                    class="bg-orange-200 text-orange-900 hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    class="bg-orange-200 text-orange-900 text-base hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
                     Añadir al pedido
                   </button>
                 </div>
               </form>
             </div>
 
-            <div class="splide__slide w-full max-w-md grid grid-cols-1 grid-rows-5 rounded overflow-hidden shadow-lg">
-              <div class="row-span-4 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
+            <div class="splide__slide w-full max-w-md rounded overflow-hidden shadow-lg">
+              <div class="h-64 bg-cover bg-center" style="background-image: url(img/h1.jpeg)"></div>
               <form class="row-span-1 bg-gray-100 px-6 py-4">
-                <h2 class="font-bold text-2xl text-center mb-2">
-                  The Coldest Sunset
+                <h2 class="font-bold text-xl text-center mb-2">
+                  Hamburguesa Doble
                 </h2>
                 <div class="flex justify-between items-center">
-                  <span>Precio: <strong>4$</strong></span>
+                  <span class="text-base "><strong>4$</strong></span>
                   <button
-                    class="bg-orange-200 text-orange-900 hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    class="bg-orange-200 text-orange-900 text-base hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    Añadir al pedido
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="splide__slide w-full max-w-md rounded overflow-hidden shadow-lg">
+              <div class="h-64 bg-cover bg-center" style="background-image: url(img/h2.jpeg)"></div>
+              <form class="row-span-1 bg-gray-100 px-6 py-4">
+                <h2 class="font-bold text-xl text-center capitalize mb-2">
+                  Hamburguesa Vegana
+                </h2>
+                <div class="flex justify-between items-center">
+                  <span class="text-base "><strong>4$</strong></span>
+                  <button
+                    class="bg-orange-200 text-orange-900 text-base hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
+                    Añadir al pedido
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="splide__slide w-full max-w-md rounded overflow-hidden shadow-lg">
+              <div class="h-64 bg-cover bg-center" style="background-image: url(img/h3.jpeg)"></div>
+              <form class="row-span-1 bg-gray-100 px-6 py-4">
+                <h2 class="font-bold text-xl text-center capitalize mb-2">
+                  Hamburguesa de Queso
+                </h2>
+                <div class="flex justify-between items-center">
+                  <span class="text-base "><strong>4$</strong></span>
+                  <button
+                    class="bg-orange-200 text-orange-900 text-base hover:bg-orange-400 focus:bg-orange-400 focus:outline-none rounded-full py-2 px-4">
                     Añadir al pedido
                   </button>
                 </div>
@@ -114,18 +148,7 @@
     </section>
   </div>
   <script src="js/splide.min.js"></script>
-  <script>
-    new Splide('.splide', {
-      perPage: 1,
-      gap: '2rem',
-      arrows:false,
-      autoplay:true,
-      resetProgress: true,
-      640: {
-			perPage: 2,
-		}
-    }).mount();
-  </script>
+  <script></script>
 </body>
 
 </html>
