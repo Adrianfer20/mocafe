@@ -12,23 +12,23 @@
 </head>
 
 <body class="container-fluid">
-  <nav
-    class="fixed top-0 left-0 botton-0 h-screen w-16 flex flex-col justify-between items-center bg-gradient-to-r from-orange-600 to-orange-400 text-gray-200 py-8">
+  <nav id="navbar"
+    class="fixed top-0 left-0 botton-0 h-screen w-16 flex flex-col justify-between items-center bg-gradient-to-r from-orange-600 to-orange-400 text-gray-200 z-10 py-8">
     <button class="fab fa-meetup fa-3x"></button>
 
     <ul class="flex flex-col justify-between items-center -mt-16">
-      <button class="w-full py-2 px-4 mb-2">
+      <button id="btn-burguer" class="w-full py-2 px-4 mb-2">
         <img src="img/001-hamburguesa.svg" alt=""
-          class="h-10 transition duration-300 ease-in-out transform focus:scale-125 focus:outline-none hover:scale-125"
+          class="h-10 transition duration-300 ease-in-out transform focus:scale-125 focus:outline-none hover:scale-125 cursor-pointer"
           style="filter: drop-shadow(8px 10px 12px #77777766)" />
       </button>
-      <button class="w-full py-2 px-4 mb-2">
-        <img src="img/002-pizza.svg" alt="" class="h-10 transition duration-300 ease-in-out transform focus:scale-125 focus:outline-none hover:scale-125"
+      <button id="btn-pizza" class="w-full py-2 px-4 mb-2">
+        <img src="img/002-pizza.svg" alt="" class="h-10 transition duration-300 ease-in-out transform focus:scale-125 focus:outline-none hover:scale-125 cursor-pointer"
           style="filter: drop-shadow(8px 10px 12px #77777766);" />
       </button>
-      <button class="w-full py-2 px-4 mb-2">
+      <button id="btn-bebida" class="w-full py-2 px-4 mb-2">
         <img src="img/004-lata-de-refresco.svg" alt=""
-          class="h-10 transition duration-300 ease-in-out transform focus:scale-125 focus:outline-none hover:scale-125"
+          class="h-10 transition duration-300 ease-in-out transform focus:scale-125 focus:outline-none hover:scale-125 cursor-pointer"
           style="filter: drop-shadow(8px 10px 12px #77777766)" />
       </button>
     </ul>
@@ -36,12 +36,14 @@
   </nav>
 
   <div class="w-full h-full min-h-screen bg-gray-200 text-gray-900 overflow-hidden shadow-lg pt-8 pl-6 pb-4">
-    <section class="ml-12">
+    <!-- Moface -->
+    <section id="section-m" class="ml-12">
       <h1 class="text-4xl font-bold">Mocafe</h1>
       <p class="text-base text-gray-700 -mt-4">Lorem ipsum dolor sit.</p>
     </section>
 
-    <section class="my-8">
+    <!-- Hamburguesa -->
+    <section id="section-h" class="my-8">
       <h2 class="text-2xl text-gray-800 font-bold uppercase ml-12">Hamburguesas</h2>
 
       <div id="splideHamburguesa" class="splide -mr-10 -mt-8">
@@ -149,7 +151,8 @@
 
     </section>
 
-    <section class="my-8">
+    <!-- Pizza -->
+    <section id="section-p" class="my-8">
       <h2 class="text-2xl text-gray-800 font-bold uppercase ml-12">Pizza</h2>
 
       <div id="splidePizza" class="splide -mr-10 -mt-8">
@@ -256,7 +259,8 @@
 
     </section>
 
-    <section class="my-8">
+    <!-- Bebidas -->
+    <section id="section-b" class="my-8">
       <h2 class="text-2xl text-gray-800 font-bold uppercase ml-12">Bebidas</h2>
 
       <div id="splideBebida" class="splide -mr-10 -mt-8">
@@ -362,9 +366,15 @@
       </div>
 
     </section>
+
+    <footer class="w-full">
+      <h4 class="text-base text-gray-700 text-center cursor-pointer mx-auto">Desarrollado por - <strong class="text-gray-800">Adrianfer Martínez</strong></h4>
+    </footer>
   </div>
+
   <script src="js/splide.min.js"></script>
   <script src="js/carrucel.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
