@@ -44,7 +44,7 @@
         if(window.scrollY * 1.5 >= $sectionB.offsetTop){
             document.querySelector("button.bg-orange-600").classList.remove('bg-orange-600');
             return $id('btn-bebida').classList.add('bg-orange-600');
-        }else if(window.scrollY + 20 >= $sectionP.offsetTop){
+        }else if(window.scrollY * 1.2 >= $sectionP.offsetTop){
             document.querySelector("button.bg-orange-600").classList.remove('bg-orange-600');
             return $id('btn-pizza').classList.add('bg-orange-600');
         }else if(window.scrollY >= $sectionH.offsetTop){
